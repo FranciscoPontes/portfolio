@@ -1,0 +1,30 @@
+.Toolbar {
+    width: 100%;
+    background-color: rgb(189, 218, 241);
+    display: flex;
+    flex-flow: row;
+    height: 7.5vh;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.Toolbar a {
+    display: flex;
+    list-style: none;
+    padding: 1vh;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    height: 100%;
+    margin-left: 5px;
+}
+
+.Toolbar a:hover,
+.Toolbar a:active,
+.Toolbar a.active{
+    box-sizing: border-box;
+    background-color: grey;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(31, 97, 238);
+    color: white;
+} 

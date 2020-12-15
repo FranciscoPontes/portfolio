@@ -1,0 +1,80 @@
+.Project {
+    display: block;
+    background-color: rgb(223, 222, 222);
+    border-radius: 15px;
+    color: rgb(158, 19, 19);
+    margin: 0px 10px 0px 0px;
+    text-align: center;
+    width: 30%;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 5px grey;
+    max-height: 10%;
+}
+
+.Project img {
+    border-radius: 7.5px;
+    width: 60%;
+    height: auto;
+}
+
+.Project p,
+.Project img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.Project .Project_Icons{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Project .Project_Icons,
+.Project .Project_Icons a {
+    color: rgb(31, 97, 238);
+}
+
+.Project .Project_Icons button.notClicked{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    outline: 0;
+    animation: likeClicked 1s ease 0s infinite;
+}
+
+.Project .Project_Icons button.Clicked{
+    background-color: transparent;
+    border: none;
+    color: grey;
+    outline: 0;
+}
+
+.Project .Project_Icons button.notClicked:hover{
+    cursor: pointer;
+}
+
+.Project .Project_Icons button.Clicked:hover{
+    cursor: not-allowed;
+}
+
+.Project a {
+    color: black;
+}
+
+@keyframes likeClicked {
+    50% {transform:scale(1.3,1.3)}
+    100% {transform:scale(1,1)}
+}
+
+@media (max-width: 550px) {
+    .Project {
+        width: 75%;
+        margin: auto;
+        margin: 10px 0px 0px 0px;
+        align-self: center;
+        height: 20vh;
+    }
+}

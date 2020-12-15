@@ -1,0 +1,64 @@
+.AboutMe {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.AboutMe img {
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px grey;
+
+}
+
+.AboutMe h3 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.AboutMe h3 > img {
+    display: block;
+    border: none;
+    animation: logoAnimation 3s ease 0s 1,
+               LogoinfiniteRotation 3s ease-in-out 3s infinite;
+    background-color: grey;
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: none;
+
+}
+
+.SocialLinks {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+.SocialLinks a {
+    color: rgb(31, 97, 238);
+    margin: 10px 5px 0px 5px;
+}
+
+@keyframes logoAnimation {
+        0%  {transform: translateX(-300%) translateY(-600%);border-radius: 15px;}
+        20%  {transform: translateX(-290%) translateY(-300%);}
+        40%  {transform: translateX(-140%) translateY(0);}
+        60%  {transform: translateX(-60%) rotate(-180deg) translateY(40%); }
+        70%  {transform: translateX(-20%)  translateY(20%) rotate(-180deg)}
+        80%  {transform: translateX(-5%) translateY(10%) rotate(-180deg)}
+        100%  {transform: translateX(0) translateY(0);}
+}
+
+@keyframes LogoinfiniteRotation {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(359deg)}
+}

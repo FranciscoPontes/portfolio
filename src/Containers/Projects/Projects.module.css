@@ -1,0 +1,46 @@
+.Projects {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-top: 32px;
+    justify-content: center;
+}
+
+
+.Title h2 {
+    text-align: center;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Grandstander', cursive;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation:  writeEffect 4s steps(30, end),
+                cursorEffect 0.5s ease 0s 4,
+                removeBorder 0.5s ease 3.5s 1;
+}
+
+
+@keyframes writeEffect {
+    from {width: 0}
+    to {width: 30%}
+}
+
+@keyframes cursorEffect {
+    from {border-color: transparent}
+    to {border-color: red}
+}
+
+@keyframes removeBorder {
+    from, to {border-color: transparent}
+}
+
+
+@media (max-width: 550px) {
+    .Projects {
+        flex-flow: column;
+        width: 60%;
+    }
+}
